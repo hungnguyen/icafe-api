@@ -196,3 +196,25 @@ export function removeCartItem(req, res) {
       });
     });
 }
+
+export function getCount(req, res) {
+  let option = {};
+  if (req.query.completed && req.query.completed !== "") {
+    option = {
+      ...option,
+      completed: req.query.completed,
+    };
+  }
+
+  Model.find(option)
+    .where(option)
+    .count()
+    .then((count) => {
+      res.status(200).json({ count });
+    })
+    .catch((e) => {
+      res.status(500).json({
+        error: e.message,
+      });
+    });
+}

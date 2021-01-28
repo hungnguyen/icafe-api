@@ -8,6 +8,7 @@ import * as tableController from "../controllers/table";
 const router = express.Router();
 
 router.get("/carts", cartController.getAll);
+router.get("/carts/count", cartController.getCount);
 router.get("/carts/:id", cartController.getOne);
 router.post("/carts", cartController.create);
 router.put("/carts/:id", cartController.update);
