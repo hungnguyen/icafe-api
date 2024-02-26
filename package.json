@@ -18,10 +18,10 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "nodemon": "^2.0.6"
   }
 }
